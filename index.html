@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alip &amp; Lala ❤</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#2a0a1f;--bg2:#5b1442;--card:rgba(255,255,255,.09);--tx:#fff0f5;--mut:#ffc4d9;--pk:#ff4d8d;--gd:#ffd6a5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg1:#220818;--bg2:#4d1038}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{font-family:Poppins,system-ui,sans-serif;color:var(--tx);background:linear-gradient(160deg,var(--bg1),var(--bg2) 60%,var(--bg1));background-attachment:fixed;overflow-x:hidden}
+section{padding:80px 20px;max-width:1000px;margin:auto;text-align:center;position:relative;z-index:2}
+h2{font-family:'Great Vibes',cursive,serif;font-size:clamp(2.4rem,7vw,3.6rem);color:var(--gd);margin-bottom:8px;font-weight:400}
+.sub{color:var(--mut);font-weight:300;margin-bottom:30px}
+#stars,#hearts{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.star{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;animation:tw 3s infinite}
+@keyframes tw{0%,100%{opacity:.1}50%{opacity:.9}}
+.h{position:absolute;bottom:-40px;animation:fl linear forwards}
+@keyframes fl{to{transform:translateY(-115vh) rotate(var(--r));opacity:0}}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.tag{letter-spacing:.3em;text-transform:uppercase;font-size:.75rem;color:var(--mut);animation:up 1s both}
+.names{font-family:'Great Vibes',cursive,serif;font-weight:400;font-size:clamp(3rem,13vw,7rem);line-height:1.1;background:linear-gradient(90deg,#ff8fb8,#ffd6a5,#ff4d8d);-webkit-background-clip:text;background-clip:text;color:transparent;animation:up 1.2s .3s both}
+.amp{display:inline-block;animation:beat 1.4s infinite;-webkit-text-fill-color:var(--pk)}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.35)}30%{transform:scale(1)}45%{transform:scale(1.2)}}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.type{min-height:1.6em;color:var(--gd);margin-top:8px}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px;width:100%;max-width:520px;animation:up 1.2s .6s both}
+.counter div{background:var(--card);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(8px);border-radius:16px;padding:14px 4px}
+.counter b{display:block;font-size:clamp(1.4rem,6vw,2.2rem);color:var(--gd)}
+.counter span{font-size:.7rem;color:var(--mut);text-transform:uppercase;letter-spacing:.1em}
+.btn{cursor:pointer;border:0;border-radius:50px;padding:12px 26px;font:600 .95rem Poppins,sans-serif;color:#fff;background:linear-gradient(135deg,#ff4d8d,#c2185b);box-shadow:0 8px 24px rgba(255,77,141,.4);transition:.3s}
+.btn:hover{transform:translateY(-3px) scale(1.04)}
+.btn.ghost{background:var(--card);box-shadow:none;border:1px solid rgba(255,255,255,.25)}
+.scroll{margin-top:30px;font-size:1.6rem;animation:bob 1.6s infinite}
+@keyframes bob{50%{transform:translateY(10px)}}
+.rv{opacity:0;transform:translateY(40px);transition:1s}.rv.on{opacity:1;transform:none}
+.tl{position:relative;text-align:left;max-width:640px;margin:auto}
+.tl:before{content:"";position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(var(--pk),var(--gd))}
+.ev{position:relative;padding:0 0 28px 46px}
+.ev:before{content:"❤";position:absolute;left:3px;top:0;color:var(--pk);animation:beat 2s infinite}
+.ev h3{color:var(--gd);font-weight:600}.ev small{color:var(--mut)}.ev p{font-weight:300;margin-top:4px}
+.pols{display:flex;flex-wrap:wrap;justify-content:center;gap:26px}
+.pol{background:#fff;color:#5b2a3f;padding:12px 12px 16px;width:min(260px,86vw);border-radius:6px;box-shadow:0 14px 34px rgba(0,0,0,.5);transition:.4s;transform:rotate(var(--a))}
+.pol:hover{transform:rotate(0) scale(1.05)}
+.slot{aspect-ratio:1/1;border-radius:4px;background:linear-gradient(135deg,#ffd6e7,#ffe9d6);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;font-size:.85rem;gap:6px}
+.slot em{font-size:3rem;font-style:normal;animation:bob 2s infinite}
+.slot img{width:100%;height:100%;object-fit:cover}
+.pol p{font-family:'Great Vibes',cursive,serif;font-size:1.5rem;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.flip{perspective:900px;height:160px;cursor:pointer}
+.flip>div{position:relative;width:100%;height:100%;transition:.7s;transform-style:preserve-3d}
+.flip.f>div{transform:rotateY(180deg)}
+.flip i,.flip p{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:14px;border-radius:18px;backface-visibility:hidden;font-style:normal}
+.flip i{background:linear-gradient(135deg,#ff4d8d,#8e2468);font-size:2.4rem}
+.flip p{background:var(--card);border:1px solid rgba(255,255,255,.2);transform:rotateY(180deg);font-weight:300;font-size:.92rem}
+.ask{min-height:220px;position:relative}
+#yes{font-size:1rem}
+#no{position:relative;margin-left:8px;transition:.2s}
+.letter{max-width:620px;margin:auto;background:#fff6ee;color:#5b2a3f;border-radius:10px;text-align:left;line-height:1.8;box-shadow:0 20px 50px rgba(0,0,0,.5);max-height:0;opacity:0;overflow:hidden;padding:0 30px;transition:1s}
+.letter.open{max-height:1000px;opacity:1;padding:30px}
+.sc{font-family:'Great Vibes',cursive,serif;font-size:2rem;color:#c2185b}
+.set{position:fixed;inset:0;background:rgba(10,0,8,.85);z-index:60;display:none;align-items:center;justify-content:center;padding:20px}
+.set.on{display:flex}
+.set div{background:#3a1030;border-radius:20px;padding:24px;width:100%;max-width:360px;display:grid;gap:10px;text-align:left}
+.set input{padding:10px 12px;border-radius:10px;border:0;font:inherit}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:48px;height:48px;border-radius:50%;border:0;background:var(--card);color:#fff;font-size:1.2rem;cursor:pointer;backdrop-filter:blur(8px)}
+[contenteditable]:focus{outline:1px dashed var(--pk);outline-offset:3px}
+footer{padding:50px 20px 70px;text-align:center;color:var(--mut);position:relative;z-index:2}
+h2{background:linear-gradient(90deg,#ffd6a5,#ff8fb8,#ffd6a5);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 4s linear infinite}@keyframes sh{to{background-position:200% 0}}
+#pg{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:4px;width:0;background:linear-gradient(90deg,#ff4d8d,#ffd6a5);z-index:70}
+.sp{position:fixed;pointer-events:none;z-index:80;font-size:16px;animation:spk 1s forwards}@keyframes spk{to{transform:translateY(-34px) scale(.3);opacity:0}}
+.bars{max-width:560px;margin:auto;display:grid;gap:18px;text-align:left}
+.bar span{font-size:.92rem;color:var(--mut)}.bar>div{height:14px;border-radius:20px;background:var(--card);overflow:hidden;margin:6px 0 2px}
+.bar i{display:block;height:100%;width:0;border-radius:20px;background:linear-gradient(90deg,#ff4d8d,#ffd6a5);transition:width 2.2s cubic-bezier(.2,.8,.2,1)}.bar b{font-size:.8rem;color:var(--gd)}
+</style>
+</head>
+<body>
+<div id="pg"></div><div id="stars"></div><div id="hearts"></div>
+
+<section class="hero">
+  <p class="tag">Happy Anniversary</p>
+  <h1 class="names"><span id="n1">Alip</span> <span class="amp">&amp;</span> <span id="n2">Lala</span></h1>
+  <p class="type" id="type"></p>
+  <div class="counter">
+    <div><b id="cd">0</b><span>Hari</span></div><div><b id="ch">0</b><span>Jam</span></div>
+    <div><b id="cm">0</b><span>Menit</span></div><div><b id="cs">0</b><span>Detik</span></div>
+  </div>
+  <p class="sub" style="margin:14px 0 4px" id="since"></p>
+  <p class="sub" style="margin-bottom:18px;color:var(--gd)" id="goal"></p>
+  <button class="btn" id="surprise">💌 Klik, ada kejutan!</button>
+  <div class="scroll">⌄</div>
+</section>
+
+<section class="rv">
+  <h2>Perjalanan Kita</h2><p class="sub">Cerita kita ❤</p>
+  <div class="tl">
+    <div class="ev"><small data-edit="dx1">27 September 2026</small><h3 data-edit="tx1">Ketemu di Live TikTok 🎮</h3><p data-edit="px1">Lala lagi live main Free Fire, buka team code, dan aku langsung masuk timnya. Awal dari semuanya!</p></div>
+    <div class="ev"><small data-edit="dx2">Malam itu</small><h3 data-edit="tx2">Mabar Sampai Tengah Malam 🌙</h3><p data-edit="px2">Main terus sampai nggak kerasa udah larut banget. Ternyata asyik banget main bareng kamu.</p></div>
+    <div class="ev"><small data-edit="dx3">Setelah game kelar</small><h3 data-edit="tx3">Lala DM Duluan 💌</h3><p data-edit="px3">Kamu yang nge-DM aku duluan lewat TikTok. Malu sih cewek duluan yang ngechat, ngasih WA, minta IG, upsss titut 🙈</p></div>
+    <div class="ev"><small data-edit="dx5">29 September 2026</small><h3 data-edit="tx5">Resmi Jadian 🎉</h3><p data-edit="px5">Dua hari setelah ketemu, kita resmi jadi pasangan. Cepat banget, tapi aku nggak menyesal sedikit pun!</p></div>
+    <div class="ev"><small data-edit="dx4">Sampai sekarang</small><h3 data-edit="tx4">Masih Satu Tim 💞</h3><p data-edit="px4">Dari satu squad di game, sekarang jadi squad seumur hidup. Yuk lanjut Lalaku yang krempeng buncit botak kebo tobrutkuu pinkkuuuu 🐷💖</p></div>
+  </div>
+</section>
+
+<section class="rv">
+  <h2>Foto favorit aku walaupun bukan yang paling pav</h2>
+  <div class="pols">
+    <div class="pol" style="--a:-4deg"><div class="slot"><img src="foto/1.jpg" alt="Foto 1" onerror="this.parentNode.innerHTML='<em>📷</em>Taruh foto di foto/1.jpg'"></div><p data-edit="c0">Satu tim, satu hati</p></div>
+    <div class="pol" style="--a:3deg"><div class="slot"><img src="foto/2.jpg" alt="Foto 2" onerror="this.parentNode.innerHTML='<em>🥰</em>Taruh foto di foto/2.jpg'"></div><p data-edit="c1">Lala lagi gemes</p></div>
+    <div class="pol" style="--a:-2deg"><div class="slot"><img src="foto/3.jpg" alt="Foto 3" onerror="this.parentNode.innerHTML='<em>😜</em>Taruh foto di foto/3.jpg'"></div><p data-edit="c2">Booyah bareng kamu!</p></div>
+  </div>
+  </section>
+
+<section class="rv">
+  <h2>Fakta Receh Tentangmu</h2><p class="sub">Ketuk kartunya 💖</p>
+  <div class="grid">
+    <div class="flip"><div><i>🍕</i><p data-edit="r1">Walaupun kamu krempeng, aku tetep sayang sama kamu</p></div></div>
+    <div class="flip"><div><i>😴</i><p data-edit="r2">Mabar sampai tengah malam sama kamu rasanya cuma lima menit</p></div></div>
+    <div class="flip"><div><i>📱</i><p data-edit="r3b">Kasih aku nenen, trus aku makin sayang sama kamu</p></div></div>
+    <div class="flip"><div><i>🙈</i><p data-edit="r4">Ngambek kamu lucu, tapi jangan sering-sering ya</p></div></div>
+    <div class="flip"><div><i>🏡</i><p data-edit="r5">Sama kamu, ngapain aja rasanya kayak pulang, apalagi dikasih nenen, nambah nambah</p></div></div>
+    <div class="flip"><div><i>🎀</i><p data-edit="r6">Kamu apa adanya, dan aku suka itu</p></div></div>
+  </div>
+</section>
+
+<section class="rv">
+  <h2>Meter Cinta</h2><p class="sub">Hasil riset ilmiah (nggak resmi) 🔬</p>
+  <div class="bars">
+    <div class="bar"><span>Rasa sayang Alip ke Lala 💖</span><div><i data-w="100"></i></div><b>100% (udah mentok)</b></div>
+    <div class="bar"><span>Tingkat gemesnya Lala 🐷</span><div><i data-w="100"></i></div><b>MELEWATI BATAS 🚀</b></div>
+    <div class="bar"><span>Kangen kalau nggak chat sehari 😭</span><div><i data-w="96"></i></div><b>96%</b></div>
+    <div class="bar"><span>Pengen mabar lagi malam ini 🎮</span><div><i data-w="100"></i></div><b>24 jam nonstop</b></div>
+    <div class="bar"><span>Ngambek (tapi tetep imut) 😤</span><div><i data-w="12"></i></div><b>12%</b></div>
+  </div>
+</section>
+
+<section class="rv ask">
+  <h2>Pertanyaan Penting</h2><p class="sub" id="q">Lala, maukah kamu jadi teammate aku, di game maupun di hidup, selamanya?</p>
+  <button class="btn" id="yes">Mau dong 💖</button><button class="btn ghost" id="no">Nggak</button>
+  <p class="sub" id="ans" style="margin-top:20px;color:var(--gd)"></p>
+</section>
+
+<section class="rv">
+  <h2>Surat Untukmu</h2><p class="sub">Buka amplopnya…</p>
+  <button class="btn" id="env">💌 Buka Surat</button><br><br>
+  <div class="letter" id="letter">
+    <div class="sc">Untuk Lala,</div>
+    <p data-edit="letter">Waktu itu aku cuma masuk ke team code kamu di live TikTok, nggak nyangka kamu bakal jadi orang yang paling sering aku pikirin. Makasih ya sudah ngajak main, nge-DM duluan, dan bikin hari-hariku lebih seru dan berwarna. Semoga kita terus satu tim sampai anniversary yang ke-100. Aku sayang kamu! ❤</p>
+    <p class="sc" style="text-align:right">Alip, teammate seumur hidupmu</p>
+  </div>
+</section>
+
+<footer><span class="sc" style="font-size:2rem">Dibuat pakai cinta ❤</span></footer>
+
+<button class="fab" id="gear" title="Pengaturan">⚙</button>
+<div class="set" id="set"><div>
+  <b>Pengaturan</b>
+  <label>Nama kamu<input id="i1"></label><label>Nama pacar<input id="i2"></label>
+  <label>Tanggal jadian<input id="i3" type="date"></label>
+  <button class="btn" id="save">Simpan</button><button class="btn ghost" id="x">Batal</button>
+</div></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const S={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}};
+let cfg={n1:'Alip',n2:'Lala',date:'2026-09-29'};
+function applyCfg(){$('n1').textContent=cfg.n1;$('n2').textContent=cfg.n2;
+  $('since').textContent='Bersama sejak '+new Date(cfg.date+'T00:00:00').toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'})}
+function tick(){const st=new Date(cfg.date+'T00:00:00'),n=new Date(),d=Math.max(0,n-st)/1000;
+  $('cd').textContent=Math.floor(d/86400);$('ch').textContent=Math.floor(d/3600)%24;$('cm').textContent=Math.floor(d/60)%60;$('cs').textContent=Math.floor(d)%60;
+  let m=(n.getFullYear()-st.getFullYear())*12+n.getMonth()-st.getMonth();if(n.getDate()<st.getDate())m--;
+  const nx=new Date(st);nx.setMonth(st.getMonth()+m+1);const left=Math.ceil((nx-n)/864e5);
+  $('goal').textContent=left<=0?'🎉 Hari ini anniversary! Selamat!':`Sudah ${m} bulan. ${left} hari lagi menuju bulan ke-${m+1} 💕`}
+applyCfg();tick();setInterval(tick,1000);
+// typing
+const msgs=['Dari team code jadi teman hidup 🎮❤','Lala, kamu MVP di hatiku 🏆','Mabar sampai tengah malam, lanjut sampai selamanya 🌙','Kamu DM duluan, aku langsung kalah 😂'];let mi=0,ci=0,del=false;
+(function ty(){const t=msgs[mi];ci+=del?-1:1;$('type').textContent=t.slice(0,ci);let w=del?30:70;
+  if(!del&&ci==t.length){del=true;w=1800}else if(del&&ci==0){del=false;mi=(mi+1)%msgs.length;w=400}setTimeout(ty,w)})();
+// stars & hearts
+for(let i=0;i<70;i++){const s=document.createElement('i');s.className='star';s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*3}s`;$('stars').appendChild(s)}
+const E=['❤','💖','💕','💗','🌹','🐱','🧸','🍓'];
+function heart(x,y){const h=document.createElement('span');h.className='h';h.textContent=E[Math.random()*E.length|0];
+  h.style.left=x+'px';h.style.fontSize=(14+Math.random()*26)+'px';h.style.setProperty('--r',(Math.random()*80-40)+'deg');
+  h.style.animationDuration=(y!=null?2+Math.random()*2:6+Math.random()*6)+'s';
+  if(y!=null){h.style.bottom='auto';h.style.top=y+'px'}
+  $('hearts').appendChild(h);setTimeout(()=>h.remove(),12000)}
+setInterval(()=>heart(Math.random()*innerWidth),600);
+function burst(n,x,y){for(let i=0;i<n;i++)heart(x+(Math.random()*120-60),y)}
+document.addEventListener('click',e=>{if(!e.target.closest('button,input,.set'))burst(5,e.clientX,e.clientY)});
+$('surprise').onclick=()=>{for(let i=0;i<45;i++)setTimeout(()=>heart(Math.random()*innerWidth),i*40)};
+// reveal, flip, letter
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('on')),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+document.querySelectorAll('.flip').forEach(f=>f.onclick=()=>f.classList.toggle('f'));
+$('env').onclick=()=>{const o=$('letter').classList.toggle('open');$('env').textContent=o?'Tutup Surat':'💌 Buka Surat';if(o)burst(20,innerWidth/2,innerHeight/2)};
+// meter, progress, sparkle
+const bo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=e.target.querySelector('i');i.style.width=i.dataset.w+'%'}}),{threshold:.5});
+document.querySelectorAll('.bar').forEach(b=>bo.observe(b));
+addEventListener('scroll',()=>{$('pg').style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+'%'});
+let lt=0;addEventListener('pointermove',e=>{const n=Date.now();if(n-lt<70)return;lt=n;const s=document.createElement('span');s.className='sp';s.textContent=['✨','💗','💖'][Math.random()*3|0];s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';document.body.appendChild(s);setTimeout(()=>s.remove(),1000)});
+// funny question
+const nos=['Nggak','Yakin?','Coba pikir lagi 🥺','Jangan dong…','Awas kukejar!','Salah pencet kan?','Tombol ini rusak 😝'];let ni=0,sc=1;
+function dodge(){ni=(ni+1)%nos.length;$('no').textContent=nos[ni];sc+=.12;$('yes').style.transform=`scale(${sc})`;$('yes').style.margin=`${sc*8}px`;
+  $('no').style.left=(Math.random()*160-80)+'px';$('no').style.top=(Math.random()*90-20)+'px'}
+$('no').onmouseenter=dodge;$('no').onclick=dodge;$('no').addEventListener('touchstart',e=>{e.preventDefault();dodge()});
+$('yes').onclick=()=>{$('ans').textContent='Yeay! Udah kuduga kamu bakal bilang mau 😎💖';for(let i=0;i<70;i++)setTimeout(()=>heart(Math.random()*innerWidth),i*30)};
+// editable text
+const EDIT=false;const saved=EDIT?S.get('txt4',{}):{};if(!EDIT)$('gear').style.display='none';
+document.querySelectorAll('[data-edit]').forEach(el=>{const k=el.dataset.edit;if(saved[k])el.textContent=saved[k];el.contentEditable=EDIT;el.spellcheck=false;
+  el.addEventListener('click',e=>e.stopPropagation());
+  el.addEventListener('input',()=>{saved[k]=el.textContent;S.set('txt4',saved)})});
+// settings
+$('gear').onclick=()=>{$('i1').value=cfg.n1;$('i2').value=cfg.n2;$('i3').value=cfg.date;$('set').classList.add('on')};
+$('x').onclick=()=>$('set').classList.remove('on');
+$('save').onclick=()=>{cfg={n1:$('i1').value||'Alip',n2:$('i2').value||'Lala',date:$('i3').value||cfg.date};S.set('cfg4',cfg);applyCfg();tick();$('set').classList.remove('on')};
+</script>
+</body>
+</html>
